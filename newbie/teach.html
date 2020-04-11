@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="main-heading">Привет, мир!</h1>
+
+    <!--
+    getElementById - присвоение переменной "а" адреса "текст"
+   a.innerText -  внутренний текст элемента "а"
+   -->
+<script>
+// var cards = ["a","b","c","d","e"];
+
+var popRandomFromArray = function (array) {
+    return array.splice(Math.floor(Math.random() * array.length), 1)[0];
+};
+var shuffle = function (cards) {
+    var deck = [];
+    while (cards.length !== 0) {
+        deck.push(popRandomFromArray(cards));
+    }
+    return deck;
+};
+
+var card1 = {
+    legal : false,
+    money : 100,
+    steps : 3
+};
+var card2 = {
+    legal : true,
+    money : 50,
+    steps : 3
+};
+var card3 = {
+    legal : true,
+    money : 80,
+    steps : 2
+};
+var card4 = {
+    legal : true,
+    money : 75,
+    steps : 2
+};
+var card5 = {
+    legal : true,
+    money : 350,
+    steps : 5
+};
+var card6 = {
+    legal : true,
+    money : 175,
+    steps : 4
+};
+var card7 = {
+    legal : false,
+    money : 275,
+    steps : 6
+};
+
+
+// var p = [  [1,4,6], [2,3,5] ];
+//
+// p[0][2];
+
+
+var cards = [card1, card2, card3, card4, card5, card6, card7];
+var deck = shuffle(cards);
+var dealCards = function (playerCount, cardsCount, deck) {
+    var players = [];
+    for (var i = 0; i < playerCount ; i++) {
+        players.push([]);
+    }
+    var handOne = [];
+    var handTwo = [];
+    while (players[0].length !== cardsCount) {
+        for (i = 0; i < players.length; i++) {
+            players[i].push(popRandomFromArray(deck));
+        }
+    }
+    return players;
+};
+var players = dealCards(3,2,deck)
+var array = [];
+
+array.push('1');
+array.push('2');
+array.push('3');
+
+alert(array[0]);
+alert(array[1]);
+alert(array[2]);
+
+
+var map = [];
+
+map['vova'] = 20;
+map['ruslan'] = 28;
+map['soniia'] = 21;
+
+alert(map['vova']);
+
+</script>
+
+</body>
+</html>
+
+
+
+

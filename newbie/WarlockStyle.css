@@ -1,0 +1,56 @@
+.characterAvatar {
+    width: 155px;
+    height: 135px;
+}
+.buttonSyles {
+    text-align: center;
+}
+.centerContent {
+    text-align: center;
+}
+.poster{
+    position:relative;
+    background:#ff6600;
+    height:135px;
+    width:155px;
+}
+.poster:hover .characterAvatar {
+    filter: drop-shadow(#e31531 0px 0px 23px);
+}
+.descr{
+    display:none;
+    margin-left:-350px;
+    padding:10px; /*внутренний отступ  */
+    margin-top:17px; /*внешний отступ */
+    background:#f3f3f3;
+    height:200px;
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    font-family: "BlizzTxt", serif;
+}
+.poster:hover .descr:hover {
+    display: none;
+}
+.poster:hover .descr {
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 520px;
+    z-index: 9999;
+    width: 335px;
+    height: 135px;
+    border-width: 10px;
+    border-style: double;
+}
+.body {
+    background: darkgrey;
+}
+@font-face {
+/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
+font-family: "BlizzTxt";
+/* адрес шрифта и тип*/
+src: url("fonts/BlizzTxt.woff") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

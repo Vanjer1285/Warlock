@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="WarlockStyle.css"  />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="body">
+<p>Выберете персонажа.</p>
+<table width="350" cellpadding="5" cellspacing="0">
+    <tr>
+        <td width="175">
+            <div class="poster">
+                <img class="characterAvatar" src="icon/Summoner.jpg" />
+                <div class="descr">
+                    Summoner<br>
+                    Can summon more imps.
+                </div>
+            </div>
+            </td>
+        <td width="175"><img class="characterAvatar" src="icon/snitch.png"/></td>
+        <td width="175"><img class="characterAvatar" src="icon/Frost1.png" /></td>
+        <td width="175"><img class="characterAvatar" src="icon/Invicible.jpg"/></td>
+        <td width="175"><img class="characterAvatar" src="icon/Madness.jpg" /></td>
+        <td width="175"><img class="characterAvatar" src="icon/Necromancer.jpg"/></td>
+    </tr>
+    <tr>
+        <td width="175" class="centerContent"><button onclick="summonerFunction" type="button" class="btn btn-danger">Summoner</button></td>
+        <td width="175" class="centerContent"><button onclick="snitchFunction()" type="button" class="btn btn-info">Snitch</button></td>
+        <td width="175" class="centerContent"><button onclick="summonerFunction" type="button" class="btn btn-danger">Frost</button></td>
+        <td width="175" class="centerContent"><button onclick="snitchFunction()" type="button" class="btn btn-info">Invicible</button></td>
+        <td width="175" class="centerContent"><button onclick="summonerFunction" type="button" class="btn btn-danger">Madness</button></td>
+        <td width="175" class="centerContent"><button onclick="snitchFunction()" type="button" class="btn btn-info">Necromancer</button></td>
+    </tr>
+    <tr>
+    <td width="175"><img class="characterAvatar" src="icon/Madness.jpg" /></td>
+    <td width="175"><img class="characterAvatar" src="icon/Necromancer.jpg"/></td>
+</tr>
+    <tr>
+        <td width="175" class="centerContent"><button onclick="summonerFunction" type="button" class="btn btn-danger">Madness</button></td>
+        <td width="175" class="centerContent"><button onclick="snitchFunction()" type="button" class="btn btn-info">Necromancer</button></td>
+    </tr><tr>
+    <td width="175"><img class="characterAvatar" src="icon/Runner.png" /></td>
+    <td width="175"><img class="characterAvatar" src="icon/Vampire.jpg"/></td>
+</tr>
+    <tr>
+        <td width="175" class="centerContent"><button onclick="summonerFunction" type="button" class="btn btn-danger">Runner</button></td>
+        <td width="175" class="centerContent"><button onclick="snitchFunction()" type="button" class="btn btn-info">Vampire</button></td>
+    </tr>
+</table>
+</body>
+<script src = "WarlockGame.js"></script>
+</html>
